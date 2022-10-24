@@ -17,7 +17,7 @@ player1 = 0
 player2 = 0
 go_first = int(randint(1, 2))
 
-while candys:
+while candys > 0:
     if go_first == 1:
         go_first = 2
         print(candys, ' left in the bowl.')
