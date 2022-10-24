@@ -25,7 +25,7 @@ while candys > 0:
         if player1 > 28:
             player1 = 28
         candys -= player1
-        if not candys:
+        if candys < 1:
             print('Player 1 wins!')
     else:
         go_first = 1
@@ -34,5 +34,5 @@ while candys > 0:
         if player2 > 28:
             player2 = 28
         candys -= player2
-        if not candys:
+        if candys < 1:
             print('Player 2 wins!')
