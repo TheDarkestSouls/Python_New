@@ -28,11 +28,16 @@ while candys > 0:
             player1 = 28
         candys -= player1
         if candys < 1:
-            print('Player 1 wins!')
+            print('You win!')
     else:
         go_first = 1
         print(candys, ' left in the bowl.')
-        skynet = int(randint(1,28))
+        if 29 < candys < 57:
+            skynet = candys - 29
+        elif candys <= 28:
+            skynet = candys
+        else:
+            skynet = int(randint(1,28))
         candys -= skynet
         if candys < 1:
-            print('Player 2 wins!')
+            print('Your opponent wins!')
