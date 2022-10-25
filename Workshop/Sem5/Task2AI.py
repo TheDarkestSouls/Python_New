@@ -20,7 +20,7 @@ go_first = int(randint(1, 2))
 while candys > 0:
     if go_first == 1:
         if skynet > 0:
-            print('Your opponent took ', skynet, ' candys.')
+            print('Your opponent takes ', skynet, ' candys.')
         go_first = 2
         print(candys, ' left in the bowl.')
         player1 = int(input('\nHow many candys you wish to take? '))
@@ -40,4 +40,4 @@ while candys > 0:
             skynet = int(randint(1,28))
         candys -= skynet
         if candys < 1:
-            print('Your opponent wins!')
+            print('Your opponent takes the rest and wins!')
