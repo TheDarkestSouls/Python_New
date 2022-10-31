@@ -7,10 +7,8 @@
 
 
 
-print("Enter A coordinates: ")
-Ax = int(input())
-Ay = int(input())
-print("Enter B cordinates: ")
-Bx = int(input())
-By = int(input())
+Ax = int(input("Enter Ax coordinates: "))
+Ay = int(input("Enter Ay coordinates: "))
+Bx = int(input("Enter Bx coordinates: "))
+By = int(input("Enter By coordinates: "))
 print("Distance beetween A and B is ", round(((Ax - Bx)**2 + (Ay - By)**2)**0.5, 2))
