@@ -89,7 +89,7 @@
 
 # Task(from lection):
 
-# path = 'C:\Users\NikEli\Desktop\GeekBrains\Python\FirstSteps\file.txt'
+# path = 'FirstSteps\\file.txt'
 # f = open(path, 'r')
 # data = f.read() + ' '
 # f.close
