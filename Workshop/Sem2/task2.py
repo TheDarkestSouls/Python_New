@@ -13,5 +13,4 @@
 import math
 
 N = int(input())
-sum = 1
 print([math.factorial(i) for i in range(1, N+1)])
