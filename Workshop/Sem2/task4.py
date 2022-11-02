@@ -21,7 +21,7 @@
 
 N = int(input())
 leeest = [i for i in range(-N, N+1) if i != 0]
-path = 'file.txt'
+path = 'Workshop\Sem2\\file.txt'
 data = open(path, 'r')
-leeest = [leeest[i] for i in data]
+leeest = [leeest[int(i)] for i in data]
 print(leeest)
