@@ -19,9 +19,8 @@
 #     print(list[int(num)])
 # print(result)
 
+import math
 N = int(input())
 leeest = [i for i in range(-N, N+1) if i != 0]
-path = 'Workshop\Sem2\\file.txt'
-data = open(path, 'r')
-leeest = [leeest[int(i)] for i in data]
-print(leeest)
+leeest = [leeest[int(i)] for i in open('Workshop\Sem2\\file.txt', 'r')]
+print(math.prod(leeest)) # math.prod multiples all elements of a list
