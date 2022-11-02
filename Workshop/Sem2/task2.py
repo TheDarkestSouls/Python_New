@@ -4,8 +4,14 @@
 
 # - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
+# N = int(input())
+# sum = 1
+# for i in range(N):
+#     sum *= i + 1
+#     print(sum, ' ')
+
+import math
+
 N = int(input())
 sum = 1
-for i in range(N):
-    sum *= i + 1
-    print(sum, ' ')
+print([math.factorial(i) for i in range(1, N+1)])
