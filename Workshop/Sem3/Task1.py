@@ -4,11 +4,13 @@
 
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
-list = [2, 3, 5, 9, 3]
-sum = 0
-for i in range(0, len(list)-1):
-    if i%2 != 0:
-        sum += list[i]
-print(sum)
+# list = [2, 3, 5, 9, 3]
+# sum = 0
+# for i in range(0, len(list)-1):
+#     if i%2 != 0:
+#         sum += list[i]
+# print(sum)
 
+li = list(map(int, input("Введите числа через пробел: ").split()))
+print(sum([li[i] for i in range(0, len(li)) if i%2]))
     
