@@ -12,15 +12,18 @@ def fib(n):
     else:
         return fib(n-1) + fib(n-2)
 
-# num = int(input())
+num = int(input())
 # l1 = [fib(f) * ((-1)**(fib(f)+1)) for f in range(0, num+1)]
 # l2 = [fib(e) for e in range(1, num+1)]
-num = int(input())
 fib_list = []
 for e in range(1, num+1):
     fib_list.append(fib(e))
 for f in range(0, num+1):
-    fib_list.insert(0, fib(f) * ((-1)**(fib(f)+1)))
+    if not f%2:
+     fib_list.insert(0, fib(f) * -1)
+    else:
+     fib_list.insert(0, fib(f))
+
 # print(list(reversed(l1)) + l2)
 print(fib_list)
 
