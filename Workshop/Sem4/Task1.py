@@ -7,7 +7,7 @@
 import math
 
 i = int(input())
-while i<1 or i>10:
+while 10 < i < 1:
     i = int(input())
 else:
     print(round(math.pi, i))
