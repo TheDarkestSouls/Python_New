@@ -1,7 +1,7 @@
 # Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
 
 quarter = int(input())
-if quarter > 0 and quarter < 5:
+if 0 < quarter < 5:
  if quarter == 1:
     print("x > 0 and y > 0")
  elif quarter == 2:

@@ -7,8 +7,8 @@
 # - x=2; y=4-> 1
 # - x=-34; y=-30 -> 3
 
-x = int(input())
-y = int(input())
+x = int(input('x = '))
+y = int(input('y = '))
 if x != 0 and y != 0:
     if x > 0 and y > 0:
         print(" ", 1)
