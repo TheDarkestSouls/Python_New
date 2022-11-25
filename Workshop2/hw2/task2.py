@@ -8,7 +8,9 @@
 N = int(input())
 mult = 1
 col = []
+
 for i in range(1, N+1):
     mult *= i
     col.append(mult)
+    
 print(col)

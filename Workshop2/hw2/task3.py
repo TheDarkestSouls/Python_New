@@ -7,7 +7,9 @@
 n = int(input())
 seq = []
 sum = 0
+
 for i in range(1, n + 1):
     seq.append((1 + 1 / i) ** i)
     sum += (1 + 1 / i) ** i
+    
 print(f'{seq}, ->, {sum}')
