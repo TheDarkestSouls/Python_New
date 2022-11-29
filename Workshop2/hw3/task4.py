@@ -10,8 +10,7 @@ dec = int(input())
 bin = ''
 
 if dec == 0:
-    bin = int(0)
-    print(bin)
+    print(0)
 else:
     while dec // 2 > 0:
         bin = str(dec % 2) + bin
