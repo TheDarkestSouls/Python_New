@@ -9,9 +9,15 @@ import random
 k = int(input("Enter power degree: "))
 while k >= 0:
     if k > 1:
-        print(f'{random.randint(1, 100)}x^{k}', end = '+')
+        print(f'{random.randint(1, 100)}x^{k}', end = ' + ')
+        with open('file.txt', 'a') as data:
+            data.write(f'{random.randint(1, 100)}x^{k} + ')
     k -= 1
     if k == 1:
-        print(f'{random.randint(1, 100)}x', end = '+')
+        print(f'{random.randint(1, 100)}x', end = ' + ')
+        with open('file.txt', 'a') as data:
+            data.write(f'{random.randint(1, 100)}x + ')
     if k == 0:
-        print(random.randint(1, 100))
+        print(random.randint(1, 100), ' = 0')
+        with open('file.txt', 'a') as data:
+            data.write(f'{random.randint(1, 100)} = 0')
